@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 
-x = np.linspace(-4,4,30)#points on the x axis
+x = np.linspace(-5,25,30)#points on the x axis
 simlen = int(1e6) #number of samples
 err = [] #declaring probability list
 randvar = np.random.normal(0,1,simlen)
@@ -20,7 +20,8 @@ for i in range(0,30):
 plt.plot(x.T,err)#plotting the CDF
 plt.grid() #creating the grid
 plt.xlabel('$x$')
-plt.ylabel('$F_X(x)$')
+plt.ylabel('$F_V(x)$')
 
 plt.show() #opening the plot window
+
 
